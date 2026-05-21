@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-scroll">
+  <defs>
+    <filter id="sketch-filter" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-glow"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <canvas id="logo-canvas" width="120" height="36"></canvas>
+    <span class="nav-name-hover">Contact me</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="work.html" class="active" data-zh="作品" data-en="Work">Work</a></li>
+    <li><a href="life.html" data-zh="生活" data-en="Life">Life</a></li>
+    <li><a href="about.html" data-zh="关于" data-en="About">About</a></li>
+    <li><button id="lang-toggle" class="lang-btn">中</button></li>
+  </ul>
+</nav>
+
+<section>
+  <p class="section-label" data-zh="全部项目" data-en="All Projects">All Projects</p>
+  <div class="project-grid">
+
+    <a href="project.html?id=1" class="project-card">
+      <div class="card-cover">
+        <img src="https://placehold.co/640x360/f0f0f0/999?text=Project+Cover" alt="">
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag">Brand Identity</span><span class="tag">2024</span></div>
+        <p class="card-title">Project Title One</p>
+        <p class="card-desc">One-line description of the brand challenge.</p>
+      </div>
+    </a>
+
+    <a href="project.html?id=2" class="project-card">
+      <div class="card-cover">
+        <img src="https://placehold.co/640x360/f0f0f0/999?text=Project+Cover" alt="">
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag">Brand System</span><span class="tag">2024</span></div>
+        <p class="card-title">Project Title Two</p>
+        <p class="card-desc">One-line description of the brand challenge.</p>
+      </div>
+    </a>
+
+    <a href="project.html?id=3" class="project-card">
+      <div class="card-cover">
+        <img src="https://placehold.co/640x360/f0f0f0/999?text=Project+Cover" alt="">
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag">Visual Identity</span><span class="tag">2023</span></div>
+        <p class="card-title">Project Title Three</p>
+        <p class="card-desc">One-line description of the brand challenge.</p>
+      </div>
+    </a>
+
+    <a href="project.html?id=4" class="project-card">
+      <div class="card-cover">
+        <img src="https://placehold.co/640x360/f0f0f0/999?text=Project+Cover" alt="">
+      </div>
+      <div class="card-body">
+        <div class="card-tags"><span class="tag">Brand Refresh</span><span class="tag">2023</span></div>
+        <p class="card-title">Project Title Four</p>
+        <p class="card-desc">One-line description of the brand challenge.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Your Name</span>
+  <a href="about.html">Get in touch →</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/logo-rope.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project — Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="sketch-filter" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-glow"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <canvas id="logo-canvas" width="120" height="36"></canvas>
+    <span class="nav-name-hover">Contact me</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="work.html" data-zh="作品" data-en="Work">Work</a></li>
+    <li><a href="life.html" data-zh="生活" data-en="Life">Life</a></li>
+    <li><a href="about.html" data-zh="关于" data-en="About">About</a></li>
+    <li><button id="lang-toggle" class="lang-btn">中</button></li>
+  </ul>
+</nav>
+
+<div class="project-header">
+  <div class="card-tags">
+    <span class="tag">Brand Identity</span>
+    <span class="tag">2024</span>
+  </div>
+  <h1>Project Title Here</h1>
+  <div class="project-meta">
+    <div class="meta-item">
+      <span>Client</span>
+      <span>Client Name</span>
+    </div>
+    <div class="meta-item">
+      <span>Scope</span>
+      <span>Brand Identity, Guidelines</span>
+    </div>
+    <div class="meta-item">
+      <span>Year</span>
+      <span>2024</span>
+    </div>
+  </div>
+</div>
+
+<div class="project-cover">
+  <img src="https://placehold.co/1440x560/f0f0f0/999?text=Project+Hero" alt="Project Hero">
+</div>
+
+<div class="project-body">
+
+  <h2>Background</h2>
+  <p>Describe the client, their industry, and the context. What was the situation before this project started? What problem needed solving?</p>
+
+  <h2>Challenge</h2>
+  <p>What was the core brand problem? Unclear positioning, outdated visuals, inconsistent identity across touchpoints? Be specific about what needed to change and why.</p>
+
+  <div class="project-image wide">
+    <img src="https://placehold.co/1200x675/f0f0f0/999?text=Research+%2F+Audit" alt="Research">
+  </div>
+
+  <h2>Process</h2>
+  <p>Walk through your design thinking. What research did you do? What directions did you explore? Why did you make the decisions you made?</p>
+
+  <div class="project-image tall">
+    <img src="https://placehold.co/1200x900/f0f0f0/999?text=Explorations" alt="Explorations">
+  </div>
+
+  <p>Explain the evolution from early concepts to the final direction. Include what was rejected and why — this shows judgment.</p>
+
+  <div class="project-image wide">
+    <img src="https://placehold.co/1200x675/f0f0f0/999?text=Final+Logo+System" alt="Logo System">
+  </div>
+
+  <h2>Brand System</h2>
+  <p>Describe the complete visual system: logo, color palette, typography, graphic language, and how they work together.</p>
+
+  <div class="project-image wide">
+    <img src="https://placehold.co/1200x675/f0f0f0/999?text=Color+%26+Typography" alt="Color and Typography">
+  </div>
+
+  <h2>Applications</h2>
+  <p>Show the brand in use across real touchpoints — packaging, digital, print, signage, etc.</p>
+
+  <div class="project-image wide">
+    <img src="https://placehold.co/1200x675/f0f0f0/999?text=Brand+Applications" alt="Applications">
+  </div>
+
+  <h2>Outcome</h2>
+  <p>What was the result? Include any measurable impact, client feedback, or qualitative outcomes that demonstrate the value of the work.</p>
+
+</div>
+
+<div class="project-nav">
+  <a href="work.html">← All Work</a>
+  <a href="project.html">Next Project →</a>
+</div>
+
+<footer>
+  <span>© 2026 Your Name</span>
+  <a href="about.html">Get in touch →</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/logo-rope.js"></script>
+</body>
+</html>

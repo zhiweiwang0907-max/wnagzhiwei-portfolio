@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="sketch-filter" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-glow"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <canvas id="logo-canvas" width="120" height="36"></canvas>
+    <span class="nav-name-hover">Contact me</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="work.html" data-zh="作品" data-en="Work">Work</a></li>
+    <li><a href="life.html" data-zh="生活" data-en="Life">Life</a></li>
+    <li><a href="about.html" class="active" data-zh="关于" data-en="About">About</a></li>
+    <li><button id="lang-toggle" class="lang-btn">中</button></li>
+  </ul>
+</nav>
+
+<section>
+  <div class="about-grid">
+    <div class="about-avatar">
+      <img src="https://placehold.co/400x400/f0f0f0/999?text=Photo" alt="Your Name">
+    </div>
+    <div>
+      <h1 class="about-name">Your Name</h1>
+      <p class="about-role" data-zh="品牌设计师，坐标 [城市]" data-en="Brand Designer based in [City]">Brand Designer based in [City]</p>
+      <p class="about-bio" data-zh="我是一名拥有 X 年经验的品牌设计师，帮助企业构建有意义的视觉身份。我相信好的品牌设计始于策略——理解一家公司是谁、服务谁、以及是什么让他们与众不同。" data-en="I'm a brand designer with X years of experience helping companies build meaningful visual identities. I believe good brand design starts with strategy — understanding who a company is, who they serve, and what makes them different.">I'm a brand designer with X years of experience helping companies build meaningful visual identities. I believe good brand design starts with strategy — understanding who a company is, who they serve, and what makes them different.</p>
+      <p class="about-bio" data-zh="曾就职于 [公司]。目前接受自由项目和全职机会。" data-en="Previously at [Company]. Currently open to freelance projects and full-time opportunities.">Previously at [Company]. Currently open to freelance projects and full-time opportunities.</p>
+
+      <p class="section-label" style="margin-top: 32px;" data-zh="工具与技能" data-en="Tools & Skills">Tools & Skills</p>
+      <div class="skills-list">
+        <span class="tag">Brand Strategy</span>
+        <span class="tag">Visual Identity</span>
+        <span class="tag">Brand Systems</span>
+        <span class="tag">Typography</span>
+        <span class="tag">Figma</span>
+        <span class="tag">Illustrator</span>
+        <span class="tag">Photoshop</span>
+        <span class="tag">Motion Design</span>
+      </div>
+
+      <p class="section-label" data-zh="联系方式" data-en="Contact">Contact</p>
+      <div class="contact-links">
+        <a href="mailto:hello@yourname.com" class="btn">hello@yourname.com</a>
+        <a href="#" class="btn btn-outline">LinkedIn</a>
+        <a href="#" class="btn btn-outline">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Your Name</span>
+  <a href="mailto:hello@yourname.com">hello@yourname.com</a>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/logo-rope.js"></script>
+</body>
+</html>
