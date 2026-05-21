@@ -379,8 +379,10 @@ section {
 section .project-grid {
   position: static;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: calc(var(--unit) * 4);
+  grid-template-columns: 2fr 1.2fr 1.6fr 1fr;
+  grid-template-rows: auto auto;
+  gap: calc(var(--unit) * 3);
+  align-items: start;
 }
 
 section .project-card {
@@ -390,6 +392,12 @@ section .project-card {
   left: auto;
   transform: rotate(var(--card-tilt, -0.8deg));
 }
+
+/* 第一张大，第二张往下错 */
+section .project-card:nth-child(1) { grid-column: 1; margin-top: 0; }
+section .project-card:nth-child(2) { grid-column: 2; margin-top: 40px; }
+section .project-card:nth-child(3) { grid-column: 3; margin-top: 16px; }
+section .project-card:nth-child(4) { grid-column: 4; margin-top: 60px; }
 
 .project-card {
   position: absolute;
