@@ -41,7 +41,7 @@ if (heroScreen) {
   projects.forEach((p, i) => {
     const a = document.createElement('a');
     a.href = p.href;
-    a.className = 'project-card card-flat';
+    a.className = 'project-card';
     a.innerHTML = `<div class="card-cover"><div style="width:100%;height:100%;background:${p.color}"></div></div><div class="card-body"><div class="card-tags"><span class="tag">${p.tag}</span></div><p class="card-title">${p.title}</p></div>`;
     // 对齐到第 i 条线：top = (i+1)/(total+1)*100%，水平错落
     const topPct = ((i + 1) / (total + 1) * 100).toFixed(1);

@@ -375,6 +375,23 @@ section {
   inset: 0;
 }
 
+/* 首页散落卡片：苹果风格 */
+#project-grid .project-card {
+  width: 240px;
+  border-radius: 18px;
+  outline: none;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: #f5f5f7;
+  filter: none;
+  transform: translateY(-50%) rotate(var(--card-tilt, -0.8deg));
+}
+#project-grid .project-card:hover {
+  transform: translateY(-54%) rotate(0deg) scale(1.03);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+}
+#project-grid .card-cover { border-radius: 18px 18px 0 0; }
+#project-grid .card-body  { background: #f5f5f7; }
+
 /* section 内的网格恢复正常流 */
 section .project-grid {
   position: static;
